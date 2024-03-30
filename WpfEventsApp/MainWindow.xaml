@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfEventsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEventsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Button.Click="Button_Click">
+            <Button
+                x:Name="pink"
+                Width="400"
+                Height="300"
+                Background="Pink">
+                <Button
+                    x:Name="aqua"
+                    Width="250"
+                    Height="150"
+                    Background="Aqua">
+                    <Button
+                        x:Name="magenta"
+                        Width="150"
+                        Height="50"
+                        Background="Magenta">
+
+                    </Button>
+                </Button>
+            </Button>
+        </StackPanel>
+        
+
+        <TextBlock x:Name="tablo"
+            Grid.Column="1"
+            FontSize="12"/>
+
+    </Grid>
+</Window>
